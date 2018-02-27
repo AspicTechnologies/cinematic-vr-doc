@@ -1,4 +1,21 @@
-- title: Getting Started
+- title: Introduction
   docs:
   - Introduction
   - Installation
+- title: Your first project
+  docs:
+  - PannerFirstProjectFile
+  - PannerFirstProjectAsio
+- title: Panner
+  docs:
+  - PannerPresentation
+  - PannerSync
+  - PannerFAQ
+- title: Monitor
+- title: Player
+  docs:
+  - PlayerPresentation
+  - CustomAudioFormat
+- title: Help me!
+  docs:
+  - Troubleshooting
