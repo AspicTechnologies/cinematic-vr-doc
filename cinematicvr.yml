@@ -2,19 +2,15 @@
   docs:
   - Introduction
   - Installation
-- title: Your first project
-  docs:
-  - PannerFirstProjectFile
-  - PannerFirstProjectAsio
+  - FirstProject
+  - Glossary
 - title: Panner
   docs:
   - PannerPresentation
   - PannerSync
-  - PannerFAQ
-- title: Monitor
+  - VideoCodecs
 - title: Player
   docs:
-  - PlayerPresentation
   - CustomAudioFormat
 - title: Help me!
   docs:

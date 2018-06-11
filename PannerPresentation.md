@@ -12,7 +12,7 @@ This page describes the various widgets and toolbars available in CinematicVR Pa
 _CinematicVR Panner screenshot_
 ![img CinematicVR Panner][window_full_num]
 
-All widgets in the GUI can be moved and detached. Therefore, you are free to create your own setup. This setup is saved when you close the software.
+All widgets in the GUI can be moved and detached. Therefore, you are free to create your own setup. Currently, this setup is not saved when you close the software.
 
 # 1. Video display
 
@@ -29,20 +29,30 @@ Timeline:
 
 Colored dots
 * They are displayed for each mono source
-* Moving source:
+* Moving source without "Draw" mode:
 	* Grab an drag a dot to move its source
 	* While moving, video is paused
-	* When you release a dot, it creates a key-position, positions are interpolated, like automations, between key-positions.
+	* When you release a dot, it creates a key-position
+		* In "Interpolation" mode (default), behavior is to interpolate key-positions
+		* In "Hold" mode, source position holds until next keyframe
+* Moving source with "Draw" mode:
+	* Grab an drag a dot to move its source
+	* While moving, video keeps playing
+	* Keyframes are created quickly while you drag the dot
+
 * To edit key-positions, Right-Click on a dot, it allows you to :
 	* Go to next or previous key
 	* Delete current key
+	* Choose between hold/interpolate
 	* Create a new key that copies previous/next key position
 
 Misc:
 * Hit Tab button to switch to Mix Focus display
 * Use "Show Grid" (in the toolbar) to display a grid overlay
 * Use "Update Transform" (toolbar) to change displayed area
-* You can hide the video using "Show video" (toolbar), it may help reduce CPU usage on  small computers
+* You can hide the video using "Show video" (toolbar), it may help reduce CPU usage on small computers
+* Use toolbars to switch to "Draw" mode and choose between "Interpolate"/"Hold"
+* [Video codecs][codec_section] to learn how to install powerfull video codecs required by the Panner
 
 # 2. Channels
 
@@ -60,11 +70,11 @@ This widget lists your channels (tracks). Each channel has:
 
 Using the button at the bottom of the widget, you can add new channels. Use the small arrow to display all new channel variants.
 
-# 3. Media
+# 3. Media sources
 
 First field holds the path to your video file. You can change the video used by drag-n-dropping a file from your explorer. Once you have dropped a file, trigger play/pause to ensure video is loading.
 
-At the bottom of the widget, two buttons allow you to add file or asio sources. When mixing, you will mainly use asio source, to connect with your DAW. However, for encoding a finallized project, you will have to use a bounced audio file.
+At the bottom of the widget, buttons allow you to add file, asio or virtual sound card source. When mixing, you will mainly use asio or virtual soundcard, to connect with your DAW. However, for encoding a finallized project, you will have to use a bounced audio file.
 
 Audio source can be renamed (double click). Use checkbox to chose which audio source is used by the audio renderer.
 
@@ -85,7 +95,7 @@ Each audio source displays a red or green sign. It turns to green if your channe
 It displays more info about the channels selected in "Channels" widget.
 
 * You can change channel color by clicking on the colored bar
-* If you are playing, a vumeter is diplayed under channel's name
+* If you are playing, a vumeter is displayed under channel's name
 * You can adjust azimuth/elevation for current key
 * You can adjust Mix Focus for current key
 
@@ -115,20 +125,22 @@ Under "File/Preferences", you can tune various settings.
 
 ### OSC
 
-* OSC in port: CinematicVR Panner listens for head-tracking on this port
+* OSC in port: CinematicVR Panner **will try to** listen for head-tracking on this port
+* Used in port: CinematicVR Panner listens for head-tracking on this port (if OSC in port is already used by another app, Used in port is the first available port found on the computer)
 * OSC out address: IP address of CinematicVR Monitor, in most case, use 127.0.0.1 for localhost
 * OSC out port: ignore it
 
+### Licensing
+
+Path to license file. Set by Aspic Technologies Launcher app.
+
 ### Environment
 
-* vrplayer_path: Path to CinematicVR Monitor executable, usually found in C:/Program Files/Aspic Technologies/CinematicVR/
-* license_file: Path to your license file (.aslc)
-* ignore other fields
+Paths to Monitor and Encoder. Set by CinematicVR installer.
 
 # 8. Others
 
-* {% icon fa-exclamation-triangle  %} There is currently NO auto-save, please save your work frequently! {% icon fa-exclamation-triangle  %}
-* Animation timeline widget is under heavy work, and not very usefull in its acutal form. You may ignore/hide it.
+* Animation timeline widget is under heavy work, and not very usefull in its ccurrent form. You may ignore/hide it.
 
 
 
