@@ -7,6 +7,7 @@
 - title: Panner
   docs:
   - PannerPresentation
+  - panner/VirtualSoundCard
   - PannerSync
   - VideoCodecs
 - title: Player

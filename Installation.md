@@ -3,6 +3,8 @@ title: Installation and License
 permalink: /cinematicvr/Installation/
 ---
 
+[video_codecs]: {{site.baseurl}}/cinematicvr/VideoCodecs/
+
 [home_115]: {{site.baseurl}}/cinematicvr/img/install/launcher_home_115.jpg
 [cvr_tab]: {{site.baseurl}}/cinematicvr/img/install/launcher_cvr_empty.jpg
 [login_tab]: {{site.baseurl}}/cinematicvr/img/install/launcher_login.jpg
@@ -73,6 +75,12 @@ Click on "Install", choose the latest version available, then Standalone, and fi
 After download, you have the possibility to install CinematicVR. Please proceed through installation.
 
 CinematicVR is now installed on your computer, you will find it in the Start Menu. It can also be launched directly from the Launcher, hitting "Launch"!
+
+## 6. Additionnal downloads
+
+In order to ensure CinematicVR works fine on your computer. You will also need to install:
+- A video codec pack, see [dedicated section][video_codecs]
+- A midi loopback driver. If you don't have one, consider trying [LoopBe1](http://www.nerds.de/en/loopbe1.html){:target="_blank"}
 
 <br/> 
 

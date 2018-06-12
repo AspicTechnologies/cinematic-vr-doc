@@ -18,8 +18,8 @@ A typical CinematicVR setup will look like this:
 - DAW: timecode Slave
 
 There is several way to communicate Midi between CinematicVR and the Digital Audio Workstation. We have already tested the following configuration succesfully:
-- Midi over IP using [Rtp Midi](https://en.wikipedia.org/wiki/RTP-MIDI) on both Apple and Windows ([Rtp Midi for Windows](https://www.tobias-erichsen.de/software/rtpmidi.html))
-- Midi loopback using [LoopBeOne](http://www.nerds.de/en/loopbe1.html)
+- Midi over IP using [Rtp Midi](https://en.wikipedia.org/wiki/RTP-MIDI){:target="_blank"} on both Apple and Windows ([Rtp Midi for Windows](https://www.tobias-erichsen.de/software/rtpmidi.html){:target="_blank"})
+- Midi loopback using [LoopBeOne](http://www.nerds.de/en/loopbe1.html){:target="_blank"}
 - Midi compatible card on both computer with a Midi link between them,
 - Midi within a MADI connection (this configuration handles audio and synchronization with the same link)
 
