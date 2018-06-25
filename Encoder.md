@@ -1,6 +1,6 @@
 ---
 title: Export your project
-permalink: /cinematicvr/panner/Encoder/
+permalink: /cinematicvr/Encoder/
 ---
 
 [first_project]: {{site.baseurl}}/cinematicvr/FirstProject/

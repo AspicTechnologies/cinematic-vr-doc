@@ -9,6 +9,7 @@
   - PannerPresentation
   - panner/VirtualSoundCard
   - PannerSync
+  - Automation
   - VideoCodecs
 - title: Encoder
   docs:
