@@ -18,6 +18,7 @@ permalink: /cinematicvr/FirstProject/
 [tuto_monitor]: {{site.baseurl}}/cinematicvr/img/tuto_monitor.png
 [tuto_asio]: {{site.baseurl}}/cinematicvr/img/tuto_asio.png
 [toolbar_mtc]: {{site.baseurl}}/cinematicvr/img/toolbar_mtc.png
+[toolbar_video]: {{site.baseurl}}/cinematicvr/img/toolbar_video.png
 [VSC1]: {{site.baseurl}}/cinematicvr/img/asio/audiostack_virtualsoundcard.jpg
 [reaper_route1]: {{site.baseurl}}/cinematicvr/img/asio/reaper_routing1.jpg
 [reaper_route2]: {{site.baseurl}}/cinematicvr/img/asio/reaper_routing2.jpg
@@ -102,6 +103,8 @@ Check that audio is properly transmitted from DAW to Panner, processed and audib
 ## 5. Move audio sources
 
 You can now move audio sources (mono objects only) by clicking colored dots on the video widget.
+
+![img Preferences][toolbar_video]
 
 Automation system is based on key-positions. Keyframes provide interpolation to smooth movements; they also come with a "Draw" mode for fast moving sources. Please consult advanced section of the doc to learn more about keyframing and tracking your audio sources.
 

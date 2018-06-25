@@ -10,6 +10,9 @@
   - panner/VirtualSoundCard
   - PannerSync
   - VideoCodecs
+- title: Encoder
+  docs:
+  - Encoder
 - title: Player
   docs:
   - CustomAudioFormat
