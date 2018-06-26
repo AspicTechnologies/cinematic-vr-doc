@@ -9,7 +9,10 @@
   - PannerPresentation
   - panner/VirtualSoundCard
   - PannerSync
+  - AudioSources
+  - VideoSources
   - Automation
+  - StripWidget
   - VideoCodecs
 - title: Encoder
   docs:
