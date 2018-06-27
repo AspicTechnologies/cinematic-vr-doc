@@ -3,59 +3,51 @@ title: Automation
 permalink: /cinematicvr/panner/Automation/
 ---
 
-[first_project]: {{site.baseurl}}/cinematicvr/FirstProject/
-[strip_widget]: {{site.baseurl}}/cinematicvr/panner/StripWidget
-[toolbar]: {{site.baseurl}}/cinematicvr/toolbar_video.png
-[toolbar_grid]: {{site.baseurl}}/cinematicvr/toolbar_grid.png
-[toolbar_transform]: {{site.baseurl}}/cinematicvr/toolbar_transform.png
-[toolbar_move_tuto]: {{site.baseurl}}/cinematicvr/toolbar_move_tuto.gif
-[toolbar_hold_tuto]: {{site.baseurl}}/cinematicvr/toolbar_hold_tuto.gif
-[toolbar_draw_tuto]: {{site.baseurl}}/cinematicvr/toolbar_draw_tuto.gif
-
-CinematicVR sound spatialization is based on automation. An automation is represented by a succesion of keyframes. It defines the position of a sound object by using a circle drawn on top of the video. This position set the azimuth/elevation of the object in the scene and can also define the "focus" (spread like) of it. Keyframes can be manipulated using the mouse and by activating the correct options into the dedicated toolbar.
-
-![toolbar][toolbar_video]
-
-By default, toolbar buttons are (from left to right) 
-	* Update transform
-	* Show grid
-	* Move / Mix Focus
-	* Draw keyframe
-	* Keyframe policy
+[edition_page]: {{site.baseurl}}/cinematicvr/panner/Edition
+[strip_widget_page]: {{site.baseurl}}/cinematicvr/panner/StripWidget
 
 
-## Update transform
+CinematicVR sound spatialization is based on automation. An automation is represented by a succesion of keyframes. It defines the position of a sound object by using a colored dot on top of the video. Automations are defined by two parameters, the position and the mixfocus.
 
-![Update transformation gui][toolbar_transform]
-Select the area you want to use in your video. For instance, crop to use only one eye if your video is stereoscopic.
+## Parameters
 
-## Show grid
+### Position
 
-![Grid overview][toolbar_grid]
-Display an elevation/azimuth grid overlay to help you visualize where the automations are located.
+The position of a keyframe define the origin of the sound object. This position is defined by using azimuth and elevation. 
+It´s represented by a colored dot on top of the video.
 
-## Move / Mix Focus 
+### MixFocus
 
-![Move keyframe][toolbar_move_tuto]
-Also available with Tab key, switch the type of automation displayed.
-While using the move mode, you will be able to change position of any automation. While moving, video and sound are set to pause.
-If the focus mode is used, the rendering of automation will change to allow the user to visualize the area and loudness (in db) of the sound object.
+What we call MixFocus correspond to the area where the sound can be heard. The mixfocus is defined by three parameters, radius, gain at center and gain on border.
+Radius correspond to the area width, represented by a circle. Gain at center set the sound level of the object at the center of the circle, while gain on border set the sound level on border. Between center and border, the sound level will be defined by a linear interpolation of the two gains.
 
-All of this informations are visible in the [strip widget][strip_widget] item.
 
-## Draw keyframe
+Depending of the channel type represented by the automations, position and MixFocus cannot be set.
 
-![Move keyframe with draw mode][toolbar_draw_tuto]
-Add keyframes while video is playing using the mouse position. Usefull if you want to follow specific object with non linear mouvements.
+| Automation type | Position | MixFocus |
+|-----------------|----------|----------|
+| Object    | ✔ | ✔ |
+| Ambisonic | ✔ | ✖ |
+| Head-lock | ✖ | ✖ |
 
-## KeyFrame policy
+* Object is a mono source, then its position and mixfocus can be defined
+* Ambisonic position can be set but not the mixfocus due to it´s spatialization.
+* Head-lock stereo, both parameters cannot been modified.
 
-![Ease/hold mode][toolbar_hold_tuto]
-Define if keyframe is set to ease mode, with linear interpolation between two keyframes, or hold, jump to nextkeyframe without interpolation.
-This option is set to ease mode by default.
+## Keyframe
+
+### Interpolation mode
+
+There is two interpolation mode. The first one is the linear interpolation, named Ease mode. Between two keyframe, CinematicVR will compute a virtual keyframe using a linear interpolation by using the position of previous and next keyframe. The second mode is named hold mode. It enforce the non interpolation between two keyframes. The hold mode is useful, by example, if there is a video cut and object sounds position changed. You can use one keyframe with the hold mode before the cut frame, and correctly place the next keyframe. Hold mode is used for transport the keyframe.
+
+
+### Edition mode
+
+KeyFrame can be moved by using two different modes. The "classic" mode, will allow the user to move the keyframe while the video is paused, this can be useful if the object you want to follow is static.
+The other mode, named "draw", is a real time keyframe displacement. The use case, by example, is when you want to track someone moving. By enable the draw mode you will be able to place the keyframe while the video is playing.
+
 
 ## Read more
 
-First project: [create an empty project and start spatialization][first_project] 
-Strip widget: [explanations of strip widget][strip_widget] 
-
+Keyframe edition : [edit keyframes][edition_page]
+Strip widget : [strip widget options][strip_widget_page]
