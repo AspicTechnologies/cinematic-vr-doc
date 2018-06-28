@@ -1,6 +1,6 @@
 ---
 title: Strip Widget
-permalink: /cinematicvr/panner/StripWidget
+permalink: /cinematicvr/panner/StripWidget/
 ---
 
 [media_full]: {{site.baseurl}}/cinematicvr/img/media_full.png

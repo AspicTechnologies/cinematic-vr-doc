@@ -1,6 +1,6 @@
 ---
 title: Audio
-permalink: /cinematicvr/panner/AudioSources
+permalink: /cinematicvr/panner/AudioSources/
 ---
 
 [media_full]: {{site.baseurl}}/cinematicvr/img/media_full.png

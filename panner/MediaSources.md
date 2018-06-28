@@ -1,6 +1,6 @@
 ---
 title: Media sources
-permalink: /cinematicvr/panner/MediaSources
+permalink: /cinematicvr/panner/MediaSources/
 ---
 
 [media_full]: {{site.baseurl}}/cinematicvr/img/media_full.png
