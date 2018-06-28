@@ -44,7 +44,7 @@ Also available with Tab key, switch the type of automation displayed.
 While using the move mode, you will be able to change position of any automation. While moving, video and sound are set to pause.
 If the focus mode is used, the rendering of automation will change to allow the user to visualize the area and loudness (in db) of the sound object.
 
-All of this informations are visible in the [strip widget][strip_widget] item.
+All of this informations are also available in the [strip widget][strip_widget_page] item.
 
 ## Draw keyframe
 
@@ -60,5 +60,7 @@ This option is set to ease mode by default.
 ## Read more
 
 First project: [create an empty project and start spatialization][first_project] 
+
 Automation: [explanation of Automation][automation_page] 
+
 Strip widget: [explanation of strip widget][strip_widget_page] 

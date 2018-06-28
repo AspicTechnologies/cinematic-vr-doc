@@ -32,7 +32,7 @@ As the CinematicVR player can handle both objects and ambisonics, the generated 
 - 2 tracks for the Head Locked Binaural stream.
 If the number of tracks is 6, an empty track is added to avoid the confusion with 5.1 contents.
 
-The .asatl file is a text based representation that is imported by a Unity based player => link to Player.
+The .asatl file is a text based representation that is imported by a Unity based [player][player].
 
 ## Facebook
 

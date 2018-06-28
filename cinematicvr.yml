@@ -10,6 +10,7 @@
   - panner/AudioSources
   - panner/VideoSources
   - panner/Automation
+  - panner/Edition
   - panner/StripWidget
   - PannerSync
   - VideoCodecs
