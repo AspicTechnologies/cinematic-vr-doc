@@ -5,7 +5,7 @@ permalink: /cinematicvr/panner/AudioSources/
 
 [media_full]: {{site.baseurl}}/cinematicvr/img/media_full.png
 [encoders]: {{site.baseurl}}/cinematicvr/Encoder/
-[media_file_merge]: {{site.baseurl}}/cinematicvr/media_file_merge.gif
+[media_file_merge]: {{site.baseurl}}/cinematicvr/img/media_file_merge.gif
 
 The source widget is the main widget related to any input media, such as audio or video.
 
