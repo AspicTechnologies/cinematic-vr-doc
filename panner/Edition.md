@@ -5,6 +5,7 @@ permalink: /cinematicvr/panner/Edition/
 
 [automation_page]: {{site.baseurl}}/cinematicvr/panner/Automation
 [strip_widget_page]: {{site.baseurl}}/cinematicvr/panner/StripWidget
+[first_project]: {{site.baseurl}}/cinematicvr/FirstProject/
 
 [toolbar]: {{site.baseurl}}/cinematicvr/img/toolbar_video.png
 [toolbar_grid]: {{site.baseurl}}/cinematicvr/img/toolbar_grid.png

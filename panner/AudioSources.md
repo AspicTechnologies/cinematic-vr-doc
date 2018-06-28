@@ -6,6 +6,9 @@ permalink: /cinematicvr/panner/AudioSources/
 [media_full]: {{site.baseurl}}/cinematicvr/img/media_full.png
 [encoders]: {{site.baseurl}}/cinematicvr/Encoder/
 [media_file_merge]: {{site.baseurl}}/cinematicvr/img/media_file_merge.gif
+[vsc_config]: {{site.baseurl}}/cinematicvr/img/asio/audiostack_virtualsoundcard.jpg
+[sync_guide]: {{site.baseurl}}/cinematicvr/PannerSync/
+[first_project]: {{site.baseurl}}/cinematicvr/FirstProject/
 
 The source widget is the main widget related to any input media, such as audio or video.
 
@@ -56,7 +59,7 @@ How do I use it?
 	- You can adjust latency, samplerate and input count. You will also be able to modify this parameters later
 	- Press Ok, soundcard is up and running
 
-	![img Virtual soundcard dialog][vsc_config]
+![img Virtual soundcard dialog][vsc_config]
 
 - Launch your DAW
 	- Go to audio settings to find available ASIO devices
