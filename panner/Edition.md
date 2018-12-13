@@ -17,6 +17,10 @@ permalink: /cinematicvr/panner/Edition/
 [strip_widget_position]: {{site.baseurl}}/cinematicvr/img/strip_widget_position.png
 [strip_widget_mixfocus]: {{site.baseurl}}/cinematicvr/img/strip_widget_mixfocus.png
 [strip_widget_overview]: {{site.baseurl}}/cinematicvr/img/strip_widget_overview.png
+[pie_menu_overview]: {{site.baseurl}}/cinematicvr/img/pie_menu_overview.png
+[pie_menu_alt_overview]: {{site.baseurl}}/cinematicvr/img/pie_menu_alt_overview.png
+[keyframe_remove_overview]: {{site.baseurl}}/cinematicvr/img/keyframe_remove_overview.png
+[keyframe_move_overview]: {{site.baseurl}}/cinematicvr/img/keyframe_move_overview.png
 
 ## Panner 
 
@@ -99,6 +103,36 @@ Actually distance is a static parameter set to 1.0 meter.
 
 Mix focus can be set by using radius, gain at center and gain at border.
 Radius is simply the value of the circle radius representing the effect area. Gain at center/border are defined by a gain in decibel in a range of -60 to 60.
+
+## Pie menu
+
+Edit and manipulate keyframes has been improved by the use of Pie menu also known as radial menu.
+
+![pie menu overview][pie_menu_overview]
+
+You can invoke this menu by maintaining right click on top of keyframes. This will automatically show you wich channel you selected in "channels" widget.
+In few clicks and movements, you can easily :
+   - go to next keyframe
+   - go to previous keyframe
+   - mute/unmute
+   - solo
+   
+![pie menu alternative overview][pie_menu_alt_overview]
+
+An alternative menu can be invoke if you use alt key with few options like :
+   - consolidate/remove (create new or remove keyframe at current time)
+   - lock/unlock keyframe (no position interpolation until the next keyframe)
+   - hide/show channel
+   - hide all except current channel
+   
+## Move/remove keyframes
+
+Removing a lot of keyframes can be bone by using the edit menu.
+
+![remove overview][keyframe_remove_overview]
+![move overview][keyframe_move_overview]
+
+Simply select options and click ok for move or remove keyframes.
 
 ## OSC control
 
